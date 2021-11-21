@@ -2,11 +2,11 @@ import React, { useEffect } from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, FlatList } from 'react-native'
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
-export default function AddIngredients() {
+export default function AddIngredients({navigation}) {
 
     return (
         <View style={styles.body}>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={() => {navigation.navigate('Camera')}}>
 
             </TouchableOpacity>
         </View>
